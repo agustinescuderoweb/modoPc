@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
+import imagenes from '../assest/imagenes'
 
 
 
@@ -13,15 +14,16 @@ function Navbar() {
   }
   return (
     <>
-      <NavContainer>
-        <h2>Ariadna |<span>EventMakeupp</span></h2>
+      <NavContainer data-aos="fade-down">
+        <img className='imag0' src={imagenes.img0}></img>
         <div className={`links ${clicked ? 'active' : ''}`}>
           <a onClick={handleClick} href="#h">Inicio</a>
-          <a onClick={handleClick} href="#h">Sobre Ariadna</a>
-          <a onClick={handleClick} href="#h">MakeUp</a>
+          <a onClick={handleClick} href="#h">Servicio</a>
+          <a onClick={handleClick} href="#h">Modo-Pc</a>
+          <a onClick={handleClick} href="#h">Galeria</a>
           <a onClick={handleClick} href="#h">Contacto</a>
           </div>
-        <div className='redes'>
+        <div className='redes' >
         <i className="bi bi-instagram"></i>
         <i className="bi bi-whatsapp"></i>
         </div>
@@ -29,26 +31,37 @@ function Navbar() {
           <BurguerButton clicked={clicked} handleClick={handleClick} />
         </div>
         <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
+  
       </NavContainer>
     </>
   )
 }
 
+
 export default Navbar
 
 const NavContainer = styled.nav`
+
+margin-top: 20px;
+
+  img {
+    width: 100px;
+    position: relative;
+    left: 100px;
+  }
+
   h2{
     margin-left: 2rem;
-    color:   #999b84;
+    color:   black;
     font-weight: 400;
-    box-shadow: 1px 1px 2px   #999b84;
+    box-shadow: 1px 1px 2px black;
     span{
       font-weight: bold;
     }
 
   }
   padding: .4rem;
-  background-color: #f4eeed;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,8 +88,8 @@ const NavContainer = styled.nav`
       position: initial;
       margin: 0;
       a{
-        font-size: 1rem;
-        color:  #999b84;
+        font-size: 1.2rem;
+        color:  black;
         display: inline;
       }
       display: block;
@@ -93,7 +106,7 @@ const NavContainer = styled.nav`
     right: 0;
     text-align: center;
     a{
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-top: 1rem;
       color: black;
     }
@@ -107,6 +120,8 @@ const NavContainer = styled.nav`
   i {
     font-size: 20px;
     margin: 10px;
+    position: relative;
+    right: 100px;
   }
 }
 `

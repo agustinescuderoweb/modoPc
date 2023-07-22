@@ -1,9 +1,17 @@
-import imagen1 from './imagen1.png'
-import imagen2 from './imagen2.png';
-import imagen3 from './imagen3.png';
+import logo  from './logo.png';
+import imagen1 from './imagen1.jpg';
+import sistemas from './animaciones/sistemas.png';
+import componentes from './animaciones/componentes.png';
+import limpieza from './animaciones/limpieza.png';
+
+
 
 export default {
+    "img0": logo, 
     "img1": imagen1,
-    "img2": imagen2,
-    "img3": imagen3,
+    "img3": sistemas,
+    "img4": componentes,
+    "img5": limpieza,
+    
 }
+
