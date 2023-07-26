@@ -24,8 +24,8 @@ function Navbar() {
           <a onClick={handleClick} href="#h">Contacto</a>
           </div>
         <div className='redes' >
-        <i className="bi bi-instagram"></i>
-        <i className="bi bi-whatsapp"></i>
+        <a href='https://www.instagram.com/modo_pc/'><i className="bi bi-instagram"></i></a>
+        <a href='https://wa.link/hmhg51'><i className="bi bi-whatsapp"></i></a>
         </div>
         <div className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />

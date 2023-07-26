@@ -7,6 +7,7 @@ import imagenes from '../assest/imagenes.js';
 
 
 
+
 const Home = () => {
   return (
     <Homme>
@@ -21,12 +22,12 @@ const Home = () => {
 
  {/*Segunda Parte*/}
 
- <div data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000" className='Servicios'>
-   <p className='servicios'>
-    SERVICIOS
-    </p></div> 
+ <div data-aos="zoom-in" className='Servicios'>
+   <div className='servicios'>
+    <p>SERVICIOS
+    </p>
+    </div>
+    </div> 
     
 
   {/*Tercera Parte*/}
@@ -88,13 +89,165 @@ const Home = () => {
     </p>
     </div>
 
-  <div className='ariadnaescudero'>
-    <img className='ariadna' src={imagenes.img12}></img>
-    <p></p>
-    
-  </div>
+  {/*Quinta Parte*/}
 
-  {/*Novena Parte*/}
+  <div className="Galeria">
+    <div className='gale'>
+    <h1 data-aos="zoom-in"  className='galeria'>
+    GALERIA
+    </h1>
+    </div>
+    <section className='galeriaFotos'>
+      <a href="#imagen1">
+      <img src={imagenes.pc1}></img>
+      </a>
+      <a href="#imagen2">
+      <img src={imagenes.pc2}></img>
+      </a>
+      <a href="#imagen3">
+      <img src={imagenes.pc3}></img>
+      </a>
+      <a href="#imagen4">
+      <img src={imagenes.pc4}></img>
+      </a>
+      <a href="#imagen5">
+      <img src={imagenes.pc5}></img>
+      </a>
+      <a href="#imagen6">
+      <img src={imagenes.pc6}></img>
+      </a>
+      <a href="#imagen7">
+      <img src={imagenes.pc7}></img>
+      </a>
+      <a href="#imagen8">
+      <img src={imagenes.pc8}></img>
+      </a>
+      <a href="#imagen9">
+      <img src={imagenes.pc9}></img>
+      </a>
+      <a href="#imagen10">
+      <img src={imagenes.pc10}></img>
+      </a>
+      <a href="#imagen11">
+      <img src={imagenes.pc11}></img>
+      </a>
+      <a href="#imagen12">
+      <img src={imagenes.pc12}></img>
+      </a> 
+      <a href="#imagen13">
+      <img src={imagenes.pc13}></img>
+      </a>
+      <a href="#imagen14">
+      <img src={imagenes.pc14}></img>
+      </a>
+      <a href="#imagen15">
+      <img src={imagenes.pc15}></img>
+      </a>
+      <a href="#imagen16">
+      <img src={imagenes.pc16}></img>
+      </a>
+      <a href="#imagen17">
+      <img src={imagenes.pc17}></img>
+      </a>
+      <a href="#imagen18">
+      <img src={imagenes.pc18}></img>
+      </a>
+
+    </section>
+    <article className='light-box'  id="imagen1">
+     <a href="#imagen18" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc1}></img>
+     <a href="#imagen2" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article>
+    <article className='light-box'  id="imagen2">
+     <a href="#imagen1" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc2}></img>
+     <a href="#imagen3" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article>
+    <article className='light-box'  id="imagen3">
+     <a href="#imagen2" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc3}></img>
+     <a href="#imagen4" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen4">
+     <a href='#imagen3' className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc4}></img>
+     <a href="#imagen5" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen5">
+     <a href="#imagen4" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc5}></img>
+     <a href="#imagen6" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen6">
+     <a href="#imagen5" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc6}></img>
+     <a href="#imagen7" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen7">
+     <a href="#imagen6" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc7}></img>
+     <a href="#imagen8" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen8">
+     <a href="#imagen7" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc8}></img>
+     <a href="#imagen9" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen9">
+     <a href="#imagen8" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc9}></img>
+     <a href="#imagen10" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen10">
+     <a href="#imagen9" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc10}></img>
+     <a href="#imagen11" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen11">
+     <a href="#imagen10" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc11}></img>
+     <a href="#imagen12" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen12">
+     <a href="#imagen11" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc12}></img>
+     <a href="#imagen13" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen13">
+     <a href="#imagen12" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc13}></img>
+     <a href="#imagen14" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen14">
+     <a href="imagen13" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc14}></img>
+     <a href="#imagen15" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen15">
+     <a href="#imagen14" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc15}></img>
+     <a href="#imagen16" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen16">
+     <a href="#imagen15" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc16}></img>
+     <a href="#imagen17" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen17">
+     <a href="#imagen16" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc17}></img>
+     <a href="#imagen18" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article> <article className='light-box'  id="imagen18">
+     <a href="#imagen17" className='next'><i class="bi bi-arrow-left"></i></a>
+     <img src={imagenes.pc18}></img>
+     <a href="#imagen1" className='next'><i class="bi bi-arrow-right"></i></a>
+     <a href='#galeria' className='close'>X</a>
+    </article>
+    </div>
 
 
   <div class="container">
@@ -106,8 +259,8 @@ const Home = () => {
       </div>
     <div class="header-right">
       <h1>Contactos</h1>
-      <a href='#'><i class="bi bi-instagram"></i><i>ariadna.eventmakeupp</i></a>
-      <a href='#'><i class="bi bi-whatsapp"></i><i>+54(9)261639734</i></a>
+      <a href='https://www.instagram.com/modo_pc/'><i class="bi bi-instagram"></i><i>modo_pc</i></a>
+      <a href='https://wa.link/hmhg51'><i class="bi bi-whatsapp"></i><i>+54(9)2612388045</i></a>
       </div>
   </div>
 
@@ -174,12 +327,12 @@ p {
 }
 
 .Servicios {
-  color: white;
-  margin: 20px;
-  background: #6c757d;
   display: flex;
   justify-content: center;
-  text-aling: center;
+  align-items: center;
+  color: white;
+  margin: 60px;
+  background: #6c757d;
   .servicios{
     padding: 30px;
     font-size: 100px;
@@ -249,6 +402,12 @@ p {
   }
 }
 
+
+.ModoPc {
+  color: black; 
+  padding: 40px;
+}
+
 .modoPc {
   margin-top: 60px;
   font-size: 100px;
@@ -257,10 +416,6 @@ p {
   background:  #6c757d;
 }
 
-.ModoPc {
-  color: black; 
-  padding: 40px;
-}
 
 .textoModoPc{
   font-size: 40px;
@@ -270,40 +425,98 @@ p {
 
 
 
+.gale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .galeria {
-  width:  100%;
-  padding: 5rem;
+  width: 90%;
+  margin-top: 30px;
+  font-size: 100px;
   text-align: center;
-  background-color: #999b84;
+  color: white; 
+  background:  #6c757d;
+  margin-bottom: 100px;
 }
 
-.carousel-inner{
-  width: 400px;
-  text-align: center;
+.galeriaFotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 5px;
+  grid-gap: 20px;
+  padding: 40px 0px;
+  overflow: hidden;
+
 }
 
-section {
-  display: flex;
-  width: 1400px;
-  height: 450px;
-}
 
-section img {
-  width: 0px;
-  flex-grow: 1;
+.galeriaFotos img {
+  width: 200px;
+  height: 200px;
+  vertical-aling: top;
   object-fit: cover;
-  opacity: .8;
-  transition: .5s ease;
+  box-shadow: 1px 0px 6px black;
+  transition: transform 0.5s;
 }
 
-section img:hover {
-  cursor: crosshair;
-  width: 300px;
-  opacity: 1;
-  filter: constrast(120%);
+.galeriaFotos a:hover  img{
+ filter: blur (2px);
+ transform: rotate(0) scale(1.3);
 }
 
+.light-box{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,.5);
+  transition: transform .3s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+
+}
+
+
+.light-box  img{
+  width: 75vh;
+  max-height: 70vh;
+}
+
+.light-box:target{
+  transform:scale(1);
+}
+
+.close{
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #851919;
+  color: #fff;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.next {
+  display: block;
+  background: #851919;
+  color: white;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+}
 .ariadnaescudero{
   margin: 5rem;
   display: inline-block;
@@ -336,9 +549,10 @@ section img:hover {
 
 .container {
   width: 100%;
+  margin-top: 200px;
   display: flex;
   text-align: center;
-  background-color: #999b84;
+  background-color: #6c757d;
   padding: 5rem;
  
 }
@@ -367,6 +581,8 @@ section img:hover {
 .header-right {
   text-align: right;
   a {
+    color: black;
+    margin-top: 20px;
     display: block;
     i{
       padding: 5px;
